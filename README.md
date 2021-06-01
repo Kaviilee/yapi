@@ -62,9 +62,9 @@ async getLoginStatus(ctx) {
 			
 			if (data) {
 				const res = JSON.parse(data)
-        const checkUserName = res.data.username;
-        const checkEmail = res.data.username || '';
-        const userInst = yapi.getInst(userModel);
+        		const checkUserName = res.data.username;
+                const checkEmail = res.data.username || '';
+                const userInst = yapi.getInst(userModel);
 
         // 检测该用户是否在数据库内
         const checkRepeat = await userInst.checkRepeat(checkEmail);
