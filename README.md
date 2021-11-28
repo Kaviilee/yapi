@@ -142,3 +142,9 @@ async getLoginStatus(ctx) {
 
 此时需要在服务器 `hots` 添加目标服务器的 ip 地址。
 
+如果 `thirdAuth.js` 请求了的接口为https，可以在 `app.js`内全局禁用ssl证书
+
+```js
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+```
+
