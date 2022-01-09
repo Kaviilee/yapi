@@ -140,7 +140,7 @@ async getLoginStatus(ctx) {
 
 > Node.js getaddrinfo ENOTFOND
 
-此时需要在服务器 `hots` 添加目标服务器的 ip 地址。
+此时需要在服务器 `hosts` 添加目标服务器的 ip 地址。
 
 如果 `thirdAuth.js` 请求了的接口为https，可以在 `app.js`内全局禁用ssl证书
 
